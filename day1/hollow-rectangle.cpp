@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string>
 
 using namespace std;
 
@@ -71,42 +72,56 @@ void numberPyramid()
     cout << "enter a number N: ";
     cin >> n;
     for (i = 1; i <= n; i++)
-         {
-             for (j = 1 ; j <= i; j++)
-             {
-                 cout << i;
-             }
-             cout << "\n";
-         }
+    {
+        for (j = 1; j <= i; j++)
+        {
+            cout << i;
+        }
+        cout << "\n";
+    }
 }
 
-void floydTriangle(){
-    int n,i,j,count=1;
-    cout<<"enter the value for n: "<<endl;
-    cin>>n;
-    for(i=1;i<=n;i++){
-        for(j=1;j<=i;j++){
-            cout<<" "<<count;
+void floydTriangle()
+{
+    int n, i, j, count = 1;
+    cout << "enter the value for n: " << endl;
+    cin >> n;
+    for (i = 1; i <= n; i++)
+    {
+        for (j = 1; j <= i; j++)
+        {
+            cout << " " << count;
             count = count + 1;
         }
-        cout<<endl;
+        cout << endl;
     }
 }
-void butterfly(){
-    int n,i,j;
-    cout<<"enter the value for n: ";
-    cin>>n;
-    for(i = 1;i<=n; i++){
-        for(j=1;j<=2*n;j++){
-            if(j>=i+1 && j<=2*n-i){
-                cout<<" ";
-            }else{
-                cout<<"* ";
+void butterfly()
+{
+    int n, i, j;
+    cout << "enter the value for n: ";
+    cin >> n;
+    for (i = 1; i <= 2*n; i++)
+    {
+        for (j = 1; j <= 2 * n; j++)
+        {
+            if (i <= n && ((j <= i) || (j >= 2 * n - i + 1)))
+            {
+                cout << " *";
+            }
+            else if (i > n && (j <= 2 * n - i + 1 || j >= i))
+            {
+                cout << " *";
+            }
+            else
+            {
+                cout << "  ";
             }
         }
-        cout<<endl;
+        cout << endl;
     }
 }
+
 int main()
 {
 
