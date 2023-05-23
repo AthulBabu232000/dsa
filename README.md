@@ -1,2 +1,4 @@
-# dsa-cpp
-interested one join with me and let us learn together dsa
+#One day One Algorithm
+##1. Kadane's Algorithm 
+###To find maximum sum of subarray
+
