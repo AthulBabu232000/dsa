@@ -12,7 +12,7 @@ def findTriplets(arr):
                 triplets.append([arr[i],arr[left],arr[right]])
                 left=left+1
                 right=right-1
-            elif(temp<0):
+            elif(temp<target):
                 left=left+1
             else:
                 right=right-1
