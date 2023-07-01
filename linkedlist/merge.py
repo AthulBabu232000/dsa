@@ -32,7 +32,6 @@ current=head2.headvalue
 while(current is not None):
     print(current.datavalue)
     current=current.nextvalue
-
 result=Node()
 dummy=result
 while(head.headvalue is not None and head2.headvalue is not None):
@@ -42,16 +41,13 @@ while(head.headvalue is not None and head2.headvalue is not None):
     elif(head.headvalue.datavalue>head2.headvalue.datavalue):
         result.nextvalue=head2.headvalue
         head2.headvalue=head2.headvalue.nextvalue
-    result=result.nextvalue
-    if((head.headvalue.datavalue == head2.headvalue.datavalue)):
+    else:
         result.nextvalue=head.headvalue
         head.headvalue=head.headvalue.nextvalue
         result=result.nextvalue
         result.nextvalue=head2.headvalue
         head2.headvalue=head2.headvalue.nextvalue
-        result=result.nextvalue
-
-
+    result=result.nextvalue
 print("printing value of result")
 current=dummy.nextvalue
 while(current is not None):
