@@ -24,9 +24,12 @@ def mergeSortHelper(arr):
             arr[k]=arrR[j]
             j+=1 
             k+=1
+    return arr
  
 arr= [6, 5, 12, 10, 9, 1] 
 mergeSortHelper(arr)
 print(arr)   
 for i in arr:
     print(i, end=" ")
+print()
+print(mergeSortHelper(arr))
