@@ -3,8 +3,9 @@ def mergeSortHelper(arr):
         mid=len(arr)//2
         arrL=arr[:mid]
         arrR=arr[mid:]
-
+        print("L")
         mergeSortHelper(arrL)
+        print("R")
         mergeSortHelper(arrR)
 
         i=j=k=0 

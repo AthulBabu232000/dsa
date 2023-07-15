@@ -1,0 +1,33 @@
+# y=[0,2,4,5,6,7,8,10]
+# x= [-2,0,2,4,7,8,10,12]
+# y=[0, 1, 2, 3, 4, 5, 6, 7,8]
+# x=[-2, 0, 4, 4.2, 4.3, 4.5, 8, 9,10]
+# left=0
+# right=len(x)-1
+# while(left<=right):
+#     mid=(left+right)//2
+#     if(x[mid]==y[mid]):
+#         break
+#     if(x[mid]<y[mid]):
+#         left=mid+1 
+#     elif(x[mid]>y[mid]):
+#         right=mid-1
+# print(mid)
+n=int(input("enter a number to find the cube root"))
+left=0 
+right=n
+while(left<=right):
+    mid=(left+right)//2 
+    if(mid**3==n):
+        print(mid)
+        break
+    if(mid**3<n):
+        left=mid+1 
+    else:
+        right=mid-1
+    print(right)
+
+
+
+
+
