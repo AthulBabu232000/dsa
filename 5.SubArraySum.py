@@ -8,13 +8,13 @@ def subArray(arr,target,n):
     result=[]
     current=arr[0]
     while(end<=n):
-        while(current>target and start<end-1):
-            current-=arr[start]
-            start+=1 
         if(current==target):
             result.append(start+1)
             result.append(end)
             return result 
+        while(current>target and start<end-1):
+            current-=arr[start]
+            start+=1 
         if end<n:
             current+=arr[end]
         end+=1
