@@ -19,3 +19,8 @@
 #### 9. Merge Sorted Array: https://leetcode.com/problems/merge-sorted-array/
 #### 10. Longest Substring Without Repeating Characters: https://leetcode.com/problems/longest-substring-without-repeating-characters/
 
+
+# ry to solve the questions from geeks for geeks also 
+## most of them are similar to that in leetcode
+### https://practice.geeksforgeeks.org/explore?page=5&sortBy=submissions
+
