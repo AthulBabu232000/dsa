@@ -25,3 +25,25 @@ def printList():
         print(current.datavalue)
         current=current.nextvalue
 printList()
+def addToList():
+    revList=list() 
+    current=head.headvalue
+    while(current is not None):
+        revList.append(current)
+        current=current.nextvalue
+    return revList
+revList=addToList()
+n=len(revList)
+for i in range(n//2):
+    temp=revList[i]
+    revList[i]=revList[n-i-1]
+    revList[n-i-1]=temp
+head.headvalue=revList[0]
+current=head.headvalue
+for i in revList[1:]:
+    current.nextvalue=i
+    current=current.nextvalue 
+current.nextvalue=None
+print("reversing the linkedlist")
+printList()
+
