@@ -1,19 +1,18 @@
+def largest_subarray_with_sum_zero(arr):
+    n = len(arr)
+    max_length = 0
+    cumulative_sum = 0
+    sum_dict = {0: -1} 
 
-    def subArraySum(self,arr, n, sum_): 
-        A = []
-        curr_sum = arr[0]
-        start = 0
-        i = 1
-        while i <= n:
-            while curr_sum > sum_ and start < i-1:
-                curr_sum = curr_sum - arr[start]
-                start += 1
-            if curr_sum == sum_:
-                A.append(start+1)
-                A.append(i)
-                return A
-            if i < n:
-                curr_sum = curr_sum + arr[i]
-            i += 1
-        A.append(-1)
-        return A
+    for i in range(n):
+        cumulative_sum += arr[i]
+        if cumulative_sum in sum_dict:
+            max_length = max(max_length, i - sum_dict[cumulative_sum])
+        if cumulative_sum not in sum_dict:
+            sum_dict[cumulative_sum] = i
+    print(sum_dict)
+    return max_length
+
+arr = [15, -2, 2, -8, 1, 7, 10, 23]
+result = largest_subarray_with_sum_zero(arr)
+print(result)  
