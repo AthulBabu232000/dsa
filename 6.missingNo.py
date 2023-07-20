@@ -1,3 +1,5 @@
+# return the missing number from an array given from 1 to N-1 
+# N is the length of the array 
 def missingNo(array,n):
     array.sort()
     if len(array)<n:
