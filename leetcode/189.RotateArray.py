@@ -17,3 +17,23 @@ arr=[1,2]
 k=5 
 result=rotateArray(arr,k)
 print(result)
+
+# here is another code with much better space complexity for rotating an array 
+# by k 
+def rotate(self, nums, k):
+    nums.reverse()
+    n=len(nums)-1 
+    k=k%(n+1)
+    i=0 
+    j=k-1
+    while(i<j):
+        nums[i],nums[j]=nums[j],nums[i]
+        i+=1 
+        j-=1 
+    i=k
+    j=n 
+    while(i<j):
+        nums[i],nums[j]=nums[j],nums[i]
+        i+=1 
+        j-=1 
+    return nums
