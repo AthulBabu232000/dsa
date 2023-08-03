@@ -1,4 +1,3 @@
-
 def power_stack(n,x)->int:
     if n==1:
         return x
