@@ -1,6 +1,6 @@
 def power_stack(n,x)->int:
-    if n==1:
-        return x
+    if n==0:
+        return 1 
     return x*power_stack(n-1,x)
 
 n:int=int(input("enter no to find the power: "))
