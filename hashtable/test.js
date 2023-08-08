@@ -1,16 +1,12 @@
-const reverse=(s)=>{
-    news=s.split('');
-    console.log(news);
-    length=s.length;
-    console.log(length/2)
-for(let i=0;i<length/2;i++){
-    temp=news[i]
-    news[i]=news[length-1-i]
-    news[length-i-1]=temp 
-    console.log(news[i],news[length-1-i]);
-}
-return news.join('');
+arr=new Array(10);
+
+arr[0]=["orange",10000];
+console.log(arr);
+for(let i in arr){
+    console.log(arr[i])
 }
 
-result=reverse("welcome to javascript tutorials");
-console.log(result);
+console.log("printing using let of operator");
+for(let j of arr){
+    console.log(arr['j'])
+}

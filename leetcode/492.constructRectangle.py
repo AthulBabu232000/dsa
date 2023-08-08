@@ -2,6 +2,7 @@
 # width should not be larger than length 
 # difference between width and length should be minimum as possible 
 # return an array [L, W]
+
 def find_factors(n):
     diff=n-1
     finalPair=list()
