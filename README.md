@@ -25,4 +25,8 @@
 ## most of them are similar to that in leetcode
 ### https://practice.geeksforgeeks.org/explore?page=5&sortBy=submissions
 
+## leetcode data
+### 222 count the node is easily done using traversal algorithms 
+
+
 

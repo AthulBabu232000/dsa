@@ -1,3 +1,5 @@
+# in this problem we are given two nodes say p,q and 
+# we have to analyse if the values of p and q tree are identical
 def isSameTree(self, p, q):
     if q is None and p is not None:
         return False 
@@ -30,3 +32,16 @@ def isSameTree(self, p, q):
     if(len(queueP)>0 or len(queueQ)>0):
         return False 
     return True
+# this is js version using recursion
+# class Solution {
+#     public boolean isSameTree(TreeNode p, TreeNode q) {
+#         if(p==null && q==null)
+#         return true;
+#         if(p!=null&&q!=null)
+#         {
+#             return ( (p.val==q.val)&&(isSameTree(p.left,q.left))&& (isSameTree(p.right,q.right)));
+#         }
+#         return false;
+#       }
+      
+#     }
