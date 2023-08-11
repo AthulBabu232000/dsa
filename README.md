@@ -28,5 +28,9 @@
 ## leetcode data
 ### 222 count the node is easily done using traversal algorithms 
 
+## 4.recursion 
+### https://leetcode.com/problems/count-and-say/description/ 38. Count And Say
+
+
 
 
