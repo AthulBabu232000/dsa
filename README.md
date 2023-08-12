@@ -27,6 +27,7 @@
 
 ## leetcode data
 ### 222 count the node is easily done using traversal algorithms 
+### 326 and 231 power of three and two .is_integer() checks if the given number is integer or not
 
 ## 4.recursion 
 ### https://leetcode.com/problems/count-and-say/description/ 38. Count And Say
