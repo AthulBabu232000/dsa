@@ -34,6 +34,32 @@ def printLinkedList(head:Node):
 
 output:list[int]=printLinkedList(head)
 print(output)
-remove(head,2)
+remove(head,1)
 alternate_output:list[int]=printLinkedList(head)
 print(alternate_output)
+# this is the code i did in leetcode 
+# iterate through linkedlist
+# take those values in a list
+# remove the element required 
+# add the updated values list into a linkedlist 
+# class ListNode:
+#     def __init__(self, val=0, next=None):
+#         self.val = val
+#         self.next = next
+def removeNthFromEnd(self, head: Optional[ListNode], n: int) -> Optional[ListNode]:
+    values=list()
+    current=head 
+    while(current is not None):
+        values.append(current.val)
+        current=current.next 
+    print(values)
+    remove_el_index=len(values)-n 
+    values.pop(remove_el_index)
+    print(values)
+    if len(values)==0:return None
+    newNode=ListNode(0)
+    current=newNode 
+    for i in range(len(values)):
+        current.next=ListNode(values[i])
+        current=current.next 
+    return newNode.next

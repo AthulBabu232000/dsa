@@ -75,7 +75,8 @@ while(current is not None):
     current=current.nextvalue 
 
 print("reversing the linkedlist in classic way by reversing the pointer while traversing")
-# here i use two pointers one is "prev" which is null initially and "current" points to first element in the beginning 
+# here i use two pointers one is "prev" which is null initially and "current" points to
+# first element in the beginning 
 prev=None 
 current=header 
 while(current is not None):
