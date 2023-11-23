@@ -7,5 +7,5 @@ def slidingWindow(arr,k):
     for i in range(n-k):
         arraySum=arraySum-arr[i]+arr[i+k]
         maximum=max(arraySum,maximum)
-    return maximum
+    return maximum 
 print(slidingWindow(arr,k))

@@ -16,12 +16,12 @@ def subArray(arr,target,n):
             current-=arr[start]
             start+=1 
         if end<n:
-            current+=arr[end]
+            current+=arr[end]  
         end+=1
     result.append(-1)
     return result
 arr=[1,2,3,4,5,6,7,8,9,10]
-arr=[15,-2,2,-8,1,7,10,23]
+arr=[15,-2,-8,1,7,10,23,5]
 final=subArray(arr,0,8)
 print(final)
 
