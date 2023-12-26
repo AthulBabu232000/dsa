@@ -38,3 +38,4 @@
 ### currently working on removing the nth element from linkedlist some issue while learning
 
 
+## https://code.visualstudio.com/docs/java/java-tutorial >> link for setting up java projects in vscode >> create java project in command palette
